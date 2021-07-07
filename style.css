@@ -1,0 +1,37 @@
+*{
+    /* background-color: aqua; */
+    flex: wrap;
+}
+
+.jumbotron{
+    background: -webkit-linear-gradient(180deg,  midnightblue, blue, aqua);
+}
+
+h1{
+    color: whitesmoke;
+}
+
+.card{
+    float: left;
+    max-width: 35%;
+    margin: 5px;
+}
+
+input{
+    margin: 15px 0 15px 0;
+    padding: 10px 0 10px 0;
+}
+
+.searchBtn{
+    background-color: rgb(29, 126, 236);
+    color: white;
+    margin: 10px 0 15px 0;
+    /* padding: 15px 0 15px; */
+}
+
+.searchBtn:hover{
+    cursor: pointer;
+    box-shadow: 0 6.4px 22.4px 0 darkgray;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
