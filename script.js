@@ -132,11 +132,11 @@ function renderHistoryBtn() {
       $("#renderHist").append(newBtn);
     };
   };
-  $('#renderHist').on('click', function (event) {
-    console.log('render Hist');
-    var research = event.target.attr("city");
-    console.log(research);
-  });
+  // $('#renderHist').on('click', function (event) {
+  //   console.log('render Hist');
+  //   var x = event.target;
+  //   document.getElementById("place").innerHTML = x.tagName
+  // });
 };
 
 function renderSingleTxt() {
