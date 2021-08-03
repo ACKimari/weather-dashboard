@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
+
 <body>
     <div class="jumbotron">
         <header class="text-center">
             <h1><strong>Weather Dashboard</strong></h1>
         </header>
     </div>
-    <div class="card">
+    <div id="renderHist" class="card">
         <h3 class="card-header">Search For a City:</h3>
         <input type="text" placeholder="New York" class="textBox">
         <button type="submit" value="Search" class="searchBtn">Search</button>
         <br>
     </div>
-    <div class="weatherWidget" ></div>
+    <div class="currentWeather">
+        <div class="card" style="width: 50rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place"></h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon"></img>
+                <ul class="card-text">
+                    <li id="date"></li>
+                    <li id="temp"></li>
+                    <li id="wind"></li>
+                    <li id="humidity"></li>
+                    <li id="uvindex"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="fivedaycards">
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place">Day 1</h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon1"></img>
+                <ul class="card-text">
+                    <li id="date1"></li>
+                    <li id="temp1"></li>
+                    <li id="wind1"></li>
+                    <li id="humidity1"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place">Day 2</h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon2"></img>
+                <ul class="card-text">
+                    <li id="date2"></li>
+                    <li id="temp2"></li>
+                    <li id="wind2"></li>
+                    <li id="humidity2"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place">Day 3</h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon3"></img>
+                <ul class="card-text">
+                    <li id="date3"></li>
+                    <li id="temp3"></li>
+                    <li id="wind3"></li>
+                    <li id="humidity3"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place">Day 4</h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon4"></img>
+                <ul class="card-text">
+                    <li id="date4"></li>
+                    <li id="temp4"></li>
+                    <li id="wind4"></li>
+                    <li id="humidity4"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="place">Day 5</h5>
+                <img class="card-subtitle mb-2 text-muted" id="icon5"></img>
+                <ul class="card-text">
+                    <li id="date5"></li>
+                    <li id="temp5"></li>
+                    <li id="wind5"></li>
+                    <li id="humidity5"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="weatherWidget"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
